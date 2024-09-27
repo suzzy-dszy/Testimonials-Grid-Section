@@ -1,16 +1,10 @@
-@use 'resets' as *;
-@use 'variables' as *;
-@use 'mixins' as *;
-
 body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
-	background-color: $secondary-color-gray-blue;
-	font-family: $barlow-semi-condensed;
-	font-size: $fs-sm;
-    font-weight: $fw-regular;
+	background-color: red;
+	
 }
 
 // atribution
