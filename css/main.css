@@ -3,7 +3,13 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+<<<<<<< HEAD
   background-color: red;
+=======
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+>>>>>>> parent of e9a2950 (Update SCSS)
 }
 
 .attribution {
