@@ -1,7 +1,5 @@
 @use 'resets' as *;
 @use 'variables' as *;
-// @use '<object>' as *;
-// @use 'responsive' as *;
 @use 'mixins' as *;
 
 body {
@@ -12,6 +10,7 @@ body {
 	background-color: $secondary-color-gray-blue;
 	font-family: $barlow-semi-condensed;
 	font-size: $fs-sm;
+    font-weight: $fw-regular;
 }
 
 // atribution
