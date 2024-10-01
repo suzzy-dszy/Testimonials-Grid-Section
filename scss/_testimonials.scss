@@ -10,7 +10,6 @@
 	&__testimonial {
 		padding: 1rem 1rem 1.5rem 1rem;
 		border-radius: 0.75em;
-		background-color: lightblue;
 		z-index: 0;
 
 		&--purple {
@@ -93,4 +92,24 @@
 			color: $primary-color-gray-blue;
 		}
 	}
+}
+
+.daniel {
+	grid-area: Daniel;
+}
+
+.jonathan {
+	grid-area: Jonathan;
+}
+
+.jeanette {
+	grid-area: Jeanette;
+}
+
+.patrick {
+	grid-area: Patrick;
+}
+
+.kira {
+	grid-area: Kira;
 }

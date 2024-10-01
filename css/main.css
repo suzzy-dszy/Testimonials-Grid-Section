@@ -154,7 +154,6 @@ table {
 .testimonials__testimonial {
   padding: 1rem 1rem 1.5rem 1rem;
   border-radius: 0.75em;
-  background-color: lightblue;
   z-index: 0;
 }
 .testimonials__testimonial--purple {
@@ -223,6 +222,52 @@ table {
   color: hsl(217, 19%, 35%);
 }
 
+.daniel {
+  grid-area: Daniel;
+}
+
+.jonathan {
+  grid-area: Jonathan;
+}
+
+.jeanette {
+  grid-area: Jeanette;
+}
+
+.patrick {
+  grid-area: Patrick;
+}
+
+.kira {
+  grid-area: Kira;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    flex-direction: row;
+  }
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "Daniel Daniel" "Jonathan Kira" "Jeanette Kira" "Patrick Patrick";
+  }
+  .testimonials__quote-img {
+    height: 9.5em;
+    right: 3.6em;
+  }
+}
+@media screen and (min-width: 90rem) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "Daniel Daniel Jonathan Kira" "Jeanette Patrick Patrick Kira";
+  }
+  .testimonials__quote-img {
+    right: 9em;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
