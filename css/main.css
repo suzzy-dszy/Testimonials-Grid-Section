@@ -144,6 +144,85 @@ table {
   font-weight: 600;
   src: url("../fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 1rem;
+  grid-template-areas: "Daniel" "Jonathan" "Jeanette" "Patrick" "Kira";
+}
+.testimonials__testimonial {
+  padding: 1rem 1rem 1.5rem 1rem;
+  border-radius: 0.75em;
+  background-color: lightblue;
+  z-index: 0;
+}
+.testimonials__testimonial--purple {
+  position: relative;
+  background-color: hsl(263, 55%, 52%);
+}
+.testimonials__testimonial--gray {
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonials__testimonial--white {
+  background-color: hsl(0, 0%, 100%);
+}
+.testimonials__testimonial--blue {
+  background-color: hsl(219, 29%, 14%);
+}
+.testimonials__quote-img {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: -1;
+}
+.testimonials__user {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.testimonials__profile-picture {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 3em;
+  height: 2.5rem;
+  margin-left: 1em;
+}
+.testimonials__user-name {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.testimonials__user-name--dark {
+  color: hsl(217, 19%, 35%);
+}
+.testimonials__verified-status {
+  grid-column: 2/3;
+  font-size: 1em;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  opacity: 50%;
+}
+.testimonials__verified-status--dark {
+  color: hsl(217, 19%, 35%);
+}
+.testimonials__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 2em;
+  padding: 0.5em;
+}
+.testimonials__title--dark {
+  color: hsl(217, 19%, 35%);
+}
+.testimonials__quote {
+  color: hsl(0, 0%, 100%);
+  opacity: 70%;
+  font-size: 2.35ch;
+  padding: 0.5em;
+}
+.testimonials__quote--dark {
+  color: hsl(217, 19%, 35%);
+}
+
 body {
   display: flex;
   flex-direction: column;

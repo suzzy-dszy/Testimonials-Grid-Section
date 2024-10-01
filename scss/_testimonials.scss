@@ -1,0 +1,96 @@
+@use 'variables' as *;
+
+.testimonials {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	margin: 2rem 1rem;
+	grid-template-areas: 'Daniel' 'Jonathan' 'Jeanette' 'Patrick' 'Kira';
+
+	&__testimonial {
+		padding: 1rem 1rem 1.5rem 1rem;
+		border-radius: 0.75em;
+		background-color: lightblue;
+		z-index: 0;
+
+		&--purple {
+			position: relative;
+			background-color: $primary-color-violet;
+		}
+
+		&--gray {
+			background-color: $primary-color-gray-blue;
+		}
+
+		&--white {
+			background-color: $primary-color-white;
+		}
+
+		&--blue {
+			background-color: $primary-color-black-blue;
+		}
+	}
+
+	&__quote-img {
+		position: absolute;
+		top: 0;
+		right: 2em;
+		z-index: -1;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: 2em;
+	}
+
+	&__profile-picture {
+		border: 1px solid $primary-color-white;
+		border-radius: 3em;
+		height: 2.5rem;
+		margin-left: 1em;
+	}
+
+	&__user-name {
+		font-size: 1.25em;
+		font-weight: $fw-bold;
+		color: $primary-color-white;
+
+		&--dark {
+			color: $primary-color-gray-blue;
+		}
+	}
+
+	&__verified-status {
+		grid-column: 2 / 3;
+		font-size: 1em;
+		font-weight: $fw-regular;
+		color: $primary-color-white;
+		opacity: 50%;
+
+		&--dark {
+			color: $primary-color-gray-blue;
+		}
+	}
+
+	&__title {
+		color: $primary-color-white;
+		font-size: 2em;
+		padding: 0.5em;
+
+		&--dark {
+			color: $primary-color-gray-blue;
+		}
+	}
+
+	&__quote {
+		color: $primary-color-white;
+		opacity: 70%;
+		font-size: 2.35ch;
+		padding: 0.5em;
+
+		&--dark {
+			color: $primary-color-gray-blue;
+		}
+	}
+}
