@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Box sizing reset */
 *,
 *::before,
@@ -27,10 +28,12 @@ dd {
 /* Set default body settings */
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased; /* Improve font rendering */
+  -webkit-font-smoothing: antialiased;
+  /* Improve font rendering */
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-family: inherit; /* Ensure body inherits default font */
+  font-family: inherit;
+  /* Ensure body inherits default font */
 }
 
 /* Remove list styles */
@@ -70,8 +73,10 @@ img,
 picture,
 svg {
   display: block;
-  max-inline-size: 100%; /* Ensures the width of images doesn't overflow */
-  block-size: auto; /* Adjusts height accordingly */
+  max-inline-size: 100%;
+  /* Ensures the width of images doesn't overflow */
+  block-size: auto;
+  /* Adjusts height accordingly */
 }
 
 /* Remove form element borders and background */
@@ -79,7 +84,8 @@ button,
 input,
 textarea,
 select {
-  font: inherit; /* Inherit font settings */
+  font: inherit;
+  /* Inherit font settings */
   background: none;
   border: none;
   outline: none;
@@ -105,7 +111,8 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word; /* Ensures text doesn’t overflow its container */
+  overflow-wrap: break-word;
+  /* Ensures text doesn’t overflow its container */
 }
 
 /* Remove all scrollbar styles */
@@ -130,20 +137,26 @@ table {
 
 /* barlow-semi-condensed-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Barlow Semi Condensed";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/barlow-semi-condensed-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/barlow-semi-condensed-v15-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* barlow-semi-condensed-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Barlow Semi Condensed";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 .testimonials {
   display: grid;
   grid-template-columns: 1fr;
@@ -151,49 +164,60 @@ table {
   margin: 2rem 1rem;
   grid-template-areas: "Daniel" "Jonathan" "Jeanette" "Patrick" "Kira";
 }
+
 .testimonials__testimonial {
   padding: 1rem 1rem 1.5rem 1rem;
   border-radius: 0.75em;
   z-index: 0;
 }
+
 .testimonials__testimonial--purple {
   position: relative;
   background-color: hsl(263, 55%, 52%);
 }
+
 .testimonials__testimonial--gray {
   background-color: hsl(217, 19%, 35%);
 }
+
 .testimonials__testimonial--white {
   background-color: hsl(0, 0%, 100%);
 }
+
 .testimonials__testimonial--blue {
   background-color: hsl(219, 29%, 14%);
 }
+
 .testimonials__quote-img {
   position: absolute;
   top: 0;
   right: 2em;
   z-index: -1;
 }
+
 .testimonials__user {
   display: flex;
   align-items: center;
   gap: 2em;
 }
+
 .testimonials__profile-picture {
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 3em;
   height: 2.5rem;
   margin-left: 1em;
 }
+
 .testimonials__user-name {
   font-size: 1.25em;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
 }
+
 .testimonials__user-name--dark {
   color: hsl(217, 19%, 35%);
 }
+
 .testimonials__verified-status {
   grid-column: 2/3;
   font-size: 1em;
@@ -201,23 +225,28 @@ table {
   color: hsl(0, 0%, 100%);
   opacity: 50%;
 }
+
 .testimonials__verified-status--dark {
   color: hsl(217, 19%, 35%);
 }
+
 .testimonials__title {
   color: hsl(0, 0%, 100%);
   font-size: 2em;
   padding: 0.5em;
 }
+
 .testimonials__title--dark {
   color: hsl(217, 19%, 35%);
 }
+
 .testimonials__quote {
   color: hsl(0, 0%, 100%);
   opacity: 70%;
   font-size: 2.35ch;
   padding: 0.5em;
 }
+
 .testimonials__quote--dark {
   color: hsl(217, 19%, 35%);
 }
@@ -246,31 +275,38 @@ table {
   body {
     flex-direction: row;
   }
+
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "Daniel Daniel" "Jonathan Kira" "Jeanette Kira" "Patrick Patrick";
   }
+
   .testimonials__quote-img {
     height: 9.5em;
     right: 3.6em;
   }
 }
+
 @media screen and (min-width: 90rem) {
   body {
     justify-content: center;
     align-items: center;
   }
+
   main {
     padding: 5rem;
   }
+
   .testimonials {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "Daniel Daniel Jonathan Kira" "Jeanette Patrick Patrick Kira";
   }
+
   .testimonials__quote-img {
     right: 9em;
   }
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -289,4 +325,6 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
