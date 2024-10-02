@@ -5,21 +5,21 @@
 @use 'mixins' as *;
 
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100vh;
-	background-color: $secondary-color-gray-blue;
-	font-family: $barlow;
-	font-size: $fs-sm;
-	font-weight: $fw-regular;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: $secondary-color-gray-blue;
+  font-family: $barlow;
+  font-size: $fs-sm;
+  font-weight: $fw-regular;
 }
 
 // atribution
 .attribution {
-	font-size: 11px;
-	text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }

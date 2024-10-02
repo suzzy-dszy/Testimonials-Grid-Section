@@ -3,44 +3,44 @@
 
 // tablet-view
 @include tablet-view {
-	body {
-		flex-direction: row;
-	}
+  body {
+    flex-direction: row;
+  }
 
-	.testimonials {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas:
-			'Daniel Daniel'
-			'Jonathan Kira'
-			'Jeanette Kira'
-			'Patrick Patrick';
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'Daniel Daniel'
+      'Jonathan Kira'
+      'Jeanette Kira'
+      'Patrick Patrick';
 
-		&__quote-img {
-			height: 9.5em;
-			right: 3.6em;
-		}
-	}
+    &__quote-img {
+      height: 9.5em;
+      right: 3.6em;
+    }
+  }
 }
 
 // desktop-view
 @include desktop-view {
-	body {
-		justify-content: center;
-		align-items: center;
-	}
+  body {
+    justify-content: center;
+    align-items: center;
+  }
 
-	main {
-		padding: 5rem;
-	}
+  main {
+    padding: 5rem;
+  }
 
-	.testimonials {
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-areas:
-			'Daniel Daniel Jonathan Kira'
-			'Jeanette Patrick Patrick Kira';
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'Daniel Daniel Jonathan Kira'
+      'Jeanette Patrick Patrick Kira';
 
-		&__quote-img {
-			right: 9em;
-		}
-	}
+    &__quote-img {
+      right: 9em;
+    }
+  }
 }
