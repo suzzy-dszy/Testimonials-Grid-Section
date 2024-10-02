@@ -1,6 +1,7 @@
 @use 'mixins' as *;
 @use 'variables' as *;
 
+// tablet-view
 @include tablet-view {
 	body {
 		flex-direction: row;
@@ -21,6 +22,7 @@
 	}
 }
 
+// desktop-view
 @include desktop-view {
 	body {
 		justify-content: center;
