@@ -260,6 +260,9 @@ table {
     justify-content: center;
     align-items: center;
   }
+  main {
+    padding: 5rem;
+  }
   .testimonials {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "Daniel Daniel Jonathan Kira" "Jeanette Patrick Patrick Kira";
